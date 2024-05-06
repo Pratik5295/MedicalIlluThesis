@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Location",
+                    "type": "Value",
+                    "id": "98760827-2c8f-46e8-a8c6-250899e0ed3a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -64,6 +73,17 @@
                     "processors": "ScaleVector2(x=0.05,y=0.05)",
                     "groups": "Default",
                     "action": "Scroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d5780ae4-ddf6-4b42-8c65-5f1bba507ea9",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Default",
+                    "action": "Location",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

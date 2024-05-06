@@ -1,7 +1,7 @@
 using KrazyKrakenGames.ThesisProject.InputHandling;
 using UnityEngine;
 
-namespace KrazyKrakenGames.ThesisProject.Camera
+namespace KrazyKrakenGames.ThesisProject.GameCamera
 {
     public class CameraController : MonoBehaviour
     {

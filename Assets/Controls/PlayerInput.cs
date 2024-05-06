@@ -9,6 +9,7 @@ namespace KrazyKrakenGames.ThesisProject.InputHandling
 
         public Vector2 Look;
         public Vector2 Scroll;
+        public Vector2 Location;
 
         public bool Hold;
 
@@ -27,6 +28,11 @@ namespace KrazyKrakenGames.ThesisProject.InputHandling
             SetLookValue(inputValue.Get<Vector2>());
         }
 
+        public void OnLocation(InputValue inputValue)
+        {
+            SetLocationValue(inputValue.Get<Vector2>());
+        }
+
 
         private void SetHoldValue(bool newHoldState)
         {
@@ -37,6 +43,11 @@ namespace KrazyKrakenGames.ThesisProject.InputHandling
         {
             Scroll = newScrollState;
         }
+        private void SetLocationValue(Vector2 newLocationValue)
+        {
+            Location = newLocationValue;
+        }
+
 
         private void SetLookValue(Vector2 newLookState)
         {
