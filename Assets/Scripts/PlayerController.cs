@@ -10,10 +10,6 @@ namespace KrazyKrakenGames.ThesisProject.InputHandling
         [SerializeField] private PlayerActionInputHandler _input;
 
         [Space(5)]
-        [Header("Model References")]
-        [SerializeField] private GameObject modelReference;
-
-        [Space(5)]
         [Header("UI Variable Handlers")]
         [SerializeField] private bool raycasterFired = false;
 
@@ -34,11 +30,6 @@ namespace KrazyKrakenGames.ThesisProject.InputHandling
 
         private void Update()
         {
-            if(modelReference == null)
-            {
-                Debug.LogWarning("Model reference missing!");
-            }
-
             if (_input.Hold)
             {
                 //Left mouse button is being held
