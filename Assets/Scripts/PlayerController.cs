@@ -87,14 +87,14 @@ namespace KrazyKrakenGames.ThesisProject.InputHandling
             direction = endPos - startPos;
             Debug.DrawRay(startPos, direction);
 
-            if(Physics.Raycast(startPos, direction, out hit, Mathf.Infinity))
-            {
-                OnShowModelInfoInput?.Invoke(true);
-            }
-            else
-            {
-                OnShowModelInfoInput?.Invoke(false);
-            }
+            //if(Physics.Raycast(startPos, direction, out hit, Mathf.Infinity))
+            //{
+            //    OnShowModelInfoInput?.Invoke(true);
+            //}
+            //else
+            //{
+            //    OnShowModelInfoInput?.Invoke(false);
+            //}
         }
 
         private void OnDrawGizmos()
@@ -111,6 +111,11 @@ namespace KrazyKrakenGames.ThesisProject.InputHandling
 
                 Gizmos.DrawRay(startPos, direction);
             }
+        }
+
+        public void DebugFire()
+        {
+            Debug.Log("Dummy button was cllicked");
         }
     }
 }
